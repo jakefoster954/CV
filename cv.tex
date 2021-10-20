@@ -1,0 +1,485 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Freeman Curriculum Vitae
+% XeLaTeX Template
+% Version 2.0 (19/3/2018)
+%
+% This template originates from:
+% http://www.LaTeXTemplates.com
+%
+% Authors:
+% Vel (vel@LaTeXTemplates.com)
+% Alessandro Plasmati
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%!TEX program = xelatex
+% NOTICE: This template must be compiled with XeLaTeX, the line above should
+% ensure this happens automatically but if it doesn't you will need to specify 
+% XeLaTeX as the engine in your editor or script
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt]{article} % Font size, can be: 10pt, 11pt or 12pt
+
+\input{structure.tex} % Include the file that specifies the document structure
+
+% Headers and footers can be added with the \lhead{} \rhead{} \lfoot{} \rfoot{} commands
+% Example right footer:
+%\rfoot{\color{headings}{\sffamily Last update: \today. Typeset with Xe\LaTeX}}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\begin{paracol}{2} % Begin the multi-column environment
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CURRICULUM VITAE TEXT
+%----------------------------------------------------------------------------------------
+
+\parbox[top][0.12\textheight][c]{\linewidth}{ % Parbox to hold the author name and CV text; fixed height to match the coloured box to the right, centred vertically and full line width
+	\vspace{-0.03\textheight} % Reduce whitespace above the parbox to separate it from the main content
+	\centering % Centre text
+	{\sffamily\HUGE Jake Foster}\\\medskip % Your name
+	{\color{headings}\scshape\Large\raggedright Final year student - University of Birmingham}
+}
+
+%----------------------------------------------------------------------------------------
+%	MAJOR RESEARCH PROJECT
+%----------------------------------------------------------------------------------------
+
+\section{About Me}
+
+I am a University of Birmingham student studying in my 4th year.
+I have a strong passion for computer science and love to keep up to date with the latest developments in the industry.
+I pride myself in being an active member of the computer science community, continuously trying to engage with a wider audience to create an environment people want to be a part of.
+Problem-solving has always been a passion of mine and my determination to not let a problem go unsolved drives me to
+complete all my programs to a high standard.
+
+\medskip % Extra whitespace before the next section
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\section{Work Experience}
+
+% Blank \workposition command to add another job:
+
+%\workposition{} % Duration
+%{} % FT/PT (full time or part time)
+%{} % Employer
+%{} % Job title
+%{} % Description
+
+% All 5 parameters must be supplied but any can be empty if you don't need them
+
+%------------------------------------------------
+\workposition{Advanced Research Computing Assistant} % Job title
+{University of Birmingham} % Employer
+{07/2019 -- 08/2020} % Duration
+{Birmingham, UK} % Location
+{Full Time} % FT/PT (full time or part time)
+{Over the first half of my placement, I created \href{https://bear-apps.bham.ac.uk}{bear-apps.bham.ac.uk}.
+This was a Django application that would automatically update the list of installed applications
+when new applications were added to the High Performance Computing cluster.
+Most of the text was scrapped from a different set of pages on the website using BeautifulSoup, a Python library designed
+to obtain and parse HTML dumps.
+
+
+For the second half of my placement, I added Centos 8 support to the HPC cluster.
+All the configs were written in SaltStack. 
+I had to code nftables configs to replace the soon-to-be-deprecated iptables, sssd to replace nslcd
+and fix general package config problems caused by the OS upgrade (For example, package name changes).
+
+I also assisted with teaching on multiple occasions, from Bash and Git to a Nvidia deep learning course (see Achievements).
+} % Description
+%------------------------------------------------
+\workposition{Trading Assistant} % Job title
+{Sainsbury's} % Employer
+{11/2015 -- 09/2017} % Duration
+{Goldalming, UK} % Location
+{Part Time} % FT/PT (full time or part time)
+{Working at Sainsbury's taught me a great deal about working well in a high-pressured,
+collaborative environment.
+The job required me to be the face of Sainsbury's; interacting with customers to ensure
+they have the best shopping experience possible.
+
+From my time at Sainsbury's, I gained skills including social interaction, time management and leadership.
+
+I got on well with my colleagues and often attended the social events organised by Sainsbury's. I believe our productivity was higher because of our ability to work together and support each other.
+}  % Description
+
+%------------------------------------------------
+
+\vspace{-\baselineskip}\medskip % Standardise the whitespace after this section and before the next (the custom command adds too much otherwise)
+
+%----------------------------------------------------------------------------------------
+%	REFERENCES
+%----------------------------------------------------------------------------------------
+
+%\section{References}
+
+%\textit{References available on request}
+
+%------------------------------------------------
+
+% Example \tableentry{} command to add another line:
+
+%\tableentry{Heading}{Content}{spaceafter}
+
+% All 3 parameters must be supplied but any can be empty if you don't need them
+% A "spaceafter" value in the third parameter will add some vertical space -- this is to be used between headings
+
+%------------------------------------------------
+
+%\begin{supertabular}{rl} % Start a table with two columns, the table will ensure everything is aligned
+	
+	%------------------------------------------------
+	
+%	\tableentry{}{\textbf{Dr. Isaac Kleiner}}{spaceafter}
+%	\tableentry{Position}{Professor}{}
+%	\tableentry{Employer}{\href{http://web.mit.edu/physics/}{Department of Physics}}{}
+%	\tableentry{}{\href{https://web.mit.edu}{\textit{Massachusetts Institute of Technology}}}{spaceafter}
+%	\tableentry{Phone}{+1 (617) 253 1000 x5322 (Work)}{}
+%	\tableentry{Mobile}{+1 (232) 842-3583}{}
+	
+	%------------------------------------------------
+	
+%	\tableentry{}{}{} % Creates some additional whitespace between the references
+	
+	%------------------------------------------------
+	
+%	\tableentry{}{\textbf{Dr. Eli Vance}}{spaceafter}
+%	\tableentry{Position}{Scientist (HL1)}{}
+%	\tableentry{Employer}{\href{http://www.bmrf.us}{Black Mesa Research Facility}}{spaceafter}
+%	\tableentry{Email}{\href{mailto:e.vance@bmrf.us}{e.vance@bmrf.us}}{}
+%	\tableentry{Phone}{+1 (800) 786-1410 x6235 (Work)}{}
+%	\tableentry{Mobile}{+1 (201) 632-3901}{}
+	
+	%------------------------------------------------
+	
+%\end{supertabular}
+
+\pagebreak % Bottom of column for page
+\switchcolumn % Switch to the next paracol column
+
+%----------------------------------------------------------------------------------------
+%	COLOURED CONTACT DETAILS BOX
+%----------------------------------------------------------------------------------------
+
+\parbox[top][0.12\textheight][c]{\linewidth}{ % Parbox to hold the colour box; fixed height to match the name/CV text to the left, centred vertically and full line width
+	\vspace{-0.04\textheight} % Reduce whitespace above the parbox to separate it from the main content
+	\colorbox{shade}{ % Create the coloured box
+		\begin{supertabular}{p{0.05\linewidth}|p{0.775\linewidth}} % Start a table with two columns, the table will ensure everything is aligned
+			\raisebox{-1pt}{\faHome} & Birmingham, United Kingdom \\ % Address
+			\raisebox{-1pt}{\faPhone} & +44 7393 929300 \\ % Phone number
+			\raisebox{0pt}{\small\faEnvelope} & \href{mailto:jakefoster954@gmail.com}{jakefoster954@gmail.com} \\ % Email address
+			\raisebox{-1pt}{\small\faLinkedin} & \href{https://linkedin.com/in/jake-foster-b433a6173/}{linkedin.com/in/jake-foster-b433a6173/} \\ % Website
+			%\raisebox{-1pt}{\small\faGithub} &
+			%\href{https://github.com/jakefoster954}{github.com/jakefoster954} \\ % Website
+			%\raisebox{-1pt}{\faGithub} & \href{https://github.com/username}{https://github.com/username} \\ % GitHub profile
+			%\raisebox{-1pt}{\faLinkedinSquare} & \href{https://www.linkedin.com/in/username}{https://www.linkedin.com/in/username} \\ % LinkedIn profile
+			% See fontawesome.pdf in the fonts folder for all icons you can use
+		\end{supertabular}
+	}
+}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+
+\section{Education} 
+
+% Blank \educationentry{} command to add another degree:
+
+%\educationentry{} % Duration
+%{} % Degree
+%{} % Honours, achievements or distinctions (e.g. first class honours)
+%{} % Department
+%{} % Institution
+
+% All 5 parameters must be supplied but any can be empty if you don't need them
+
+%------------------------------------------------
+
+\begin{supertabular}{rl} % Start a table with two columns, the table will ensure everything is aligned
+
+	%------------------------------------------------
+	
+	\educationentry{2017-Present} % Duration
+	{Bachelor of Science (WIP)} % Degree
+	{86\% average as of Dec 2020} % Honours, achievements or distinctions (e.g. first class honours)
+	{Computer Science} % Department
+	{University of Birmingham} % Institution
+	
+	%------------------------------------------------
+	
+	\educationentry{2015-2017} % Duration
+	{A levels} % Degree
+	{A, A, B, C} % Honours, achievements or distinctions (e.g. first class honours)
+	{} % Department
+	{Godalming College} % Institution
+	
+	%------------------------------------------------
+
+\end{supertabular}
+
+%----------------------------------------------------------------------------------------
+%	TECH SKILLS
+%----------------------------------------------------------------------------------------
+
+\section{Tech Skills} 
+
+% Example \tableentry{} command to add another line:
+
+%\tableentry{Heading}{Content}{spaceafter}
+
+% All 3 parameters must be supplied but any can be empty if you don't need them
+% A "spaceafter" value in the third parameter will add some vertical space -- this is to be used between headings
+
+%------------------------------------------------
+
+\mybox{Java}
+\mybox{Python}
+\mybox{C\#}
+\mybox{OCaml}
+\mybox{Haskell}
+\mybox{C}
+\mybox{Git} \\
+\mybox{LaTeX}
+\mybox{Data Science}
+\mybox{Machine Learning} \\
+\mybox{Reinforcement Learning}
+\mybox{Lambda Calculus} \\
+\mybox{Networking}
+\mybox{Algorithms}
+\mybox{SQL}
+\mybox{Unity}
+
+
+%----------------------------------------------------------------------------------------
+%	SOFT SKILLS
+%----------------------------------------------------------------------------------------
+
+\section{Soft Skills}
+
+% Example \tableentry{} command to add another line:
+
+%\tableentry{Heading}{Content}{spaceafter}
+
+% All 3 parameters must be supplied but any can be empty if you don't need them
+% A "spaceafter" value in the third parameter will add some vertical space -- this is to be used between headings
+
+%------------------------------------------------
+
+\mybox{Leadership}
+\mybox{Event Management}
+\mybox{Technical Writing} \\
+\mybox{Time Management}
+\mybox{Public Speaking}
+\mybox{Mentoring}
+\mybox{Problem Solving}
+\mybox{Decision Making}
+
+%----------------------------------------------------------------------------------------
+%	DISSERTATION
+%----------------------------------------------------------------------------------------
+
+\vspace{20pt} % Modify this to make page look nice
+\section{Dissertation}
+When a person moves to intercept a ball, they first move their head rapidly to focus on the ball.
+After this initial movement, they will perform small movements to maintain focus until
+the interception point can be predicted with a reasonable degree of accuracy.
+Once the intercept has been predicted (Usually around the time the ball reaches the climax of the parabola),
+the hands will move to the interception point. All movements have a gradual acceleration and deceleration.
+
+I believe these movement trends occur as a byproduct of noise in the environment. I wish to try to model this process in a reinforcement learning 
+environment, providing the agent with minimal, noisy information to see if the agent will obtain motion similar to a human. 
+
+%----------------------------------------------------------------------------------------
+%	PUBLICATIONS
+%----------------------------------------------------------------------------------------
+
+% As an alternative to a long-form publication list, you can create a shorter summary using only DOI values and years.
+
+% Example \doipublication{} command to add another publication:
+
+%\doipublication{Year}{DOI}{firstauthor}{spaceafter}
+
+% All four parameters are required (can be empty though)
+% A value of "firstauthor" in the third parameter will print the DOI in bold
+% A "spaceafter" value in the fourth parameter will add some vertical space -- this is to be used between years
+
+%------------------------------------------------
+
+%\begin{supertabular}{rl} % Start a table with two columns, the table will ensure everything is aligned
+	
+	%------------------------------------------------
+	
+%	\doipublication{1996}{10.1021/jp951483+}{firstauthor}{spaceafter}
+	
+	%------------------------------------------------
+	
+%	\doipublication{1990}{10.1139/p90-097}{firstauthor}{spaceafter}
+%	\doipublication{1986}{10.1139/v86-297}{}{}
+	
+	%------------------------------------------------
+	
+%	\doipublication{1986}{10.1103/PhysRevA.34.2329}{}{spaceafter}
+	
+	%------------------------------------------------
+	
+%	& \textit{First author publications in} \textbf{bold}\\
+	
+%	%------------------------------------------------
+	
+%\end{supertabular}
+
+% \medskip % Extra whitespace before the next section
+
+%----------------------------------------------------------------------------------------
+\pagebreak
+\switchcolumn % Switch to the next paracol column
+%----------------------------------------------------------------------------------------
+
+
+%----------------------------------------------------------------------------------------
+%	Achievements
+%----------------------------------------------------------------------------------------
+
+\section{Achievements}
+\workposition{CSS UoB Treasurer} % Job title
+{} % Employer
+{03/2020-03/2021} % Duration
+{} % Location
+{} % FT/PT (full time or part time)
+{I am the treasurer of the award winning departmental society for computer science at the university.
+We have hosted a number of events, including but not limited to online game nights and pub quizzes.
+
+My role as treasurer requires me to manage the finances, book venues, authorise bank transfers and assist with
+the acquisition of sponsors.
+}  % Description
+
+\workposition{BCS Committee Member} % Job title
+{} % Employer
+{11/2018-10/2022} % Duration
+{} % Location
+{} % FT/PT (full time or part time)
+{I was co-opted onto the BCS Brimingham branch committee November 2018, then was officially
+elected October 2019 to serve for 3 years.
+In October 2020 I became the Student Outreach Officer, tasked with bringing awareness of the BCS to students at UoB, Aston and BCU.
+
+As a committee member, I assist with the organisation of events. I have led a debate for the annual AGM
+and have promoted BCS in front of an audience consisting of hundreds of people.
+
+I have represented the organisation as a sponsor at Hack the Midlands, a 24hr creative marathon on multiple occasions.
+}  % Description
+
+\workposition{Google Hash code 2019} % Job title
+{} % Employer
+{02/2019} % Duration
+{} % Location
+{} % FT/PT (full time or part time)
+{I collaborated with 3 friends in Google Hash code. We were called Team8472 and we achieved a score
+of 853560 putting us 444th in the world and top 20 in the UK. More than 70,000 students and professionals
+from around the world registered for Hash Code 2019.
+}  % Description
+
+\workposition{Teaching Assistant} % Job title
+{} % Employer
+{07/2019-08/2020} % Duration
+{} % Location
+{} % FT/PT (full time or part time)
+{As part of my Industrial Placement, I was required to assist with teaching seminars on
+Bash, Git, Python, Slurm and Nvidia deep learning tools using the HPC Cluster.
+
+The sessions were covered over 1-2 days and involved me answering questions and assisting with problems.
+}  % Description
+
+\workposition{Capture the Flags} % Job title
+{} % Employer
+{03/2019} % Duration
+{} % Location
+{} % FT/PT (full time or part time)
+{I take part in the annual BAE Systems Capture the Flag that is held at the University of Birmingham.
+
+A "CTF" is a hacking competition where you obtain flags from vulnerable applications.
+
+I placed 2nd in the 2019 CTF, missing out on first place by a couple hundred points. CTF's are a great way to practice useful
+security skills like Buffer Overflow attacks, Reverse Engineering attacks, Stenography, SQL Injection etc.
+}  % Description
+
+%----------------------------------------------------------------------------------------
+
+\pagebreak % Bottom of column for page
+\switchcolumn % Switch to the next paracol column
+
+%----------------------------------------------------------------------------------------
+%	Projects
+%----------------------------------------------------------------------------------------
+
+\section{Projects}
+\workposition{Game Jams} % Job title
+{Game Development Society} % Employer
+{03/2018, 10/2018, 03/2019} % Duration
+{} % Location
+{} % FT/PT (full time or part time)
+{I have participated in multiple game development competitions where I am
+required to create a game within a 48hr period. I created my own game engine in Java which I
+originally used to develop these games. The first game I made was a side-scrolling platformer. The full game
+was never completed however a demo level was created as a prototype and all the key mechanics were functional.
+
+More recently, I have created a couple 2D games in Unity (Code written in C\#).}  % Description
+
+%----------------------------------------------------------------------------------------
+
+\workposition{Hackathons} % Job title
+{Hack the Midlands} % Employer
+{10/2018} % Duration
+{} % Location
+{} % FT/PT (full time or part time)
+{Hack the Midlands is a 24hr creative marathon. I was a participant in 2018,
+then attended as a representative of the BCS Birmingham branch in 2019 and 2020.
+I experimented with Amazon Alexa and a range of different API’s to create a
+program that could play naughts and crosses (theoretically online) through Alexa.
+Getting to see what the other participants had created was fascinating and gave me a lot of ideas about future projects I would like to work on.}  % Description
+
+%----------------------------------------------------------------------------------------
+
+\workposition{} % Job title
+{IBM QuisKit} % Employer
+{11/2019} % Duration
+{} % Location
+{} % FT/PT (full time or part time)
+{I have also attended a quantum computing Hackathon designed around using Quizkit - an open source
+framework for quantum computing.}  % Description
+
+%----------------------------------------------------------------------------------------
+
+%----------------------------------------------------------------------------------------
+%	Personal Interests
+%----------------------------------------------------------------------------------------
+
+\section{Personal Interests}
+\longformdescription{Board Games}
+{I often play board games with my housemates. I am a competitive player and enjoy theory crafting 
+strategies to create an optimal set of moves.}
+
+\longformdescription{Snooker}
+{I grew up playing pool and snooker down my local pub. I gave it up when I came to university but
+would love the opportunity to return to the table.}
+
+\longformdescription{Dungeons and Dragons}
+{DnD is a great opportunity to get to act in a way you would not normally act. It is a chance to
+avoid the stresses of everyday life for a short time while you are your character.}
+%----------------------------------------------------------------------------------------
+\end{paracol}
+
+%----------------------------------------------------------------------------------------
+\end{document}
